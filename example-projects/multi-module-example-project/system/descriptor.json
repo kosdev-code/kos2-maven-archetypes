@@ -1,0 +1,8 @@
+{
+  "kos": {
+    "app": {
+      "appClass": "", //TODO add fully qualified app class
+      "appId": "system"
+    }
+  }
+}
