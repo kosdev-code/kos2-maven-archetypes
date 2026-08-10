@@ -21,7 +21,7 @@ system-app-archetype: is a single module system application archetype.
 
 ```
 mvn archetype:generate \
-  -DarchetypeGroupId=com.kos.archetypes \
+  -DarchetypeGroupId=com.kos2.archetypes \
   -DarchetypeArtifactId=system-app
 ```
 
@@ -29,7 +29,7 @@ basic-app-archetype: is a single module basic application archetype.
 
 ```
 mvn archetype:generate \
- -DarchetypeGroupId=com.kos.archetypes \
+ -DarchetypeGroupId=com.kos2.archetypes \
  -DarchetypeArtifactId=app
 ```
 
@@ -37,7 +37,7 @@ sdk-app-archetype: is a multi module project for apps that also include SDKs.
 
 ```
 mvn archetype:generate \
- -DarchetypeGroupId=com.kos.archetypes \
+ -DarchetypeGroupId=com.kos2.archetypes \
  -DarchetypeArtifactId=sdk-app
 ```
 
@@ -45,7 +45,7 @@ multi-module-archetype: is a multi module system application archetype.
 
 ```
 mvn archetype:generate \
- -DarchetypeGroupId=com.kos.archetypes \
+ -DarchetypeGroupId=com.kos2.archetypes \
  -DarchetypeArtifactId=multi-module
 ```
 

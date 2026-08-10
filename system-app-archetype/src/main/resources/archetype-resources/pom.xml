@@ -21,7 +21,7 @@
         <dependencies>
             <!-- kOS SDK -->
             <dependency>
-                <groupId>com.kosdev.kos.sdk.bom</groupId>
+                <groupId>com.kosdev.kos2.sdk.bom</groupId>
                 <artifactId>kos-bom</artifactId>
                 <version>${kos.version}</version>
                 <type>pom</type>
@@ -41,7 +41,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-core</artifactId>
         </dependency>
         <dependency>
@@ -53,7 +53,7 @@
             <artifactId>api-freestyle</artifactId>
         </dependency>
         <dependency>
-          <groupId>com.kosdev.kos.sdk.api</groupId>
+          <groupId>com.kosdev.kos2.sdk.api</groupId>
           <artifactId>api-info</artifactId>
         </dependency>
         <dependency>
