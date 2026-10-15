@@ -47,7 +47,7 @@
         <dependencies>
             <!-- BOM for kOS SDK Code (core, dispense, freestyle) -->
             <dependency>
-                <groupId>com.kosdev.kos.sdk.bom</groupId>
+                <groupId>com.kosdev.kos2.sdk.com</groupId>
                 <artifactId>kos-bom</artifactId>
                 <version>${kos-bom.version}</version>
                 <type>pom</type>

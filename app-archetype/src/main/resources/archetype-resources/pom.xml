@@ -8,7 +8,6 @@
 
     <properties>
         <kos.version>0.0.0-SNAPSHOT</kos.version>
-        <lombok.version>1.18.38</lombok.version>
 
         <java.version>17</java.version>
 
@@ -26,7 +25,7 @@
         <dependencies>
             <!-- kOS SDK -->
             <dependency>
-                <groupId>com.kosdev.kos.sdk.bom</groupId>
+                <groupId>com.kosdev.kos2.sdk.com</groupId>
                 <artifactId>kos-bom</artifactId>
                 <version>${kos.version}</version>
                 <type>pom</type>
@@ -46,19 +45,19 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-dispense</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-freestyle</artifactId>
         </dependency>
         <dependency>
-          <groupId>com.kosdev.kos.sdk.api</groupId>
+          <groupId>com.kosdev.kos2.sdk.api</groupId>
           <artifactId>api-info</artifactId>
         </dependency>
         <dependency>
@@ -99,7 +98,6 @@
                 <plugin>
                     <groupId>com.kosdev.kos.maven</groupId>
                     <artifactId>kos-kab-maven-plugin</artifactId>
-                    <version>${kos-kab-maven-plugin.version}</version>
                 </plugin>
 
             </plugins>

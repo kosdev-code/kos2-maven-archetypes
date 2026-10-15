@@ -5,15 +5,15 @@
     <!-- ====== Parent =============================================================== -->
 
     <parent>
-        <groupId>${groupId}</groupId>
-        <artifactId>${rootArtifactId}-sdk-app</artifactId>
-        <version>${version}</version>
+        <groupId>com.org</groupId>
+        <artifactId>multi-module-example-project-sdk-app</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
     </parent>
 
     <!-- ====== Basics =============================================================== -->
 
-    <artifactId>${artifactId}-sdk-app.core</artifactId>
-    <name>${artifactId}-sdk-app.core</name>
+    <artifactId>example-sdk-app.core</artifactId>
+    <name>example-sdk-app.core</name>
     <description>Example Core</description>
 
     <!-- We must generate a -javadoc JAR file to publish on Maven Central, also we must
@@ -67,19 +67,19 @@
             <artifactId>annotations</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-dispense</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-freestyle</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-info</artifactId>
         </dependency>
         <dependency>

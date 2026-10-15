@@ -5,15 +5,15 @@
     <!-- ====== Parent =============================================================== -->
 
     <parent>
-        <groupId>${groupId}</groupId>
-        <artifactId>${rootArtifactId}-sdk-app</artifactId>
-        <version>${version}</version>
+        <groupId>com.org</groupId>
+        <artifactId>multi-module-example-project-sdk-app</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
     </parent>
 
     <!-- ====== Basics =============================================================== -->
 
-    <artifactId>${artifactId}-sdk-app.sdk</artifactId>
-    <name>${artifactId}-sdk-app.sdk</name>
+    <artifactId>example-sdk-app.sdk</artifactId>
+    <name>example-sdk-app.sdk</name>
     <description>Example SDK</description>
 
     <dependencies>
@@ -22,11 +22,11 @@
             <artifactId>annotations</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-dispense</artifactId>
         </dependency>
         <dependency>
@@ -50,6 +50,7 @@
                             <goal>sdk</goal>
                         </goals>
                         <configuration>
+                            <appId>org-${project.artifactId}</appId>
                             <srcDirs>
                                 <srcDir>../core</srcDir>
                             </srcDirs>

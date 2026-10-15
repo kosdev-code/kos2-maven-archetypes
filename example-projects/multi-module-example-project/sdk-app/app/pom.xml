@@ -5,31 +5,31 @@
     <!-- ====== Parent =============================================================== -->
 
     <parent>
-        <groupId>${groupId}</groupId>
-        <artifactId>${rootArtifactId}-sdk-app</artifactId>
-        <version>${version}</version>
+        <groupId>com.org</groupId>
+        <artifactId>multi-module-example-project-sdk-app</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
     </parent>
 
     <!-- ====== Basics =============================================================== -->
 
-    <artifactId>${artifactId}-sdk-app.app</artifactId>
-    <name>${artifactId}-sdk-app.app</name>
+    <artifactId>example-sdk-app.app</artifactId>
+    <name>example-sdk-app.app</name>
     <description>Example App</description>
 
     <!-- ====== Dependencies  ======================================================== -->
 
     <dependencies>
         <dependency>
-            <groupId>${groupId}</groupId>
-            <artifactId>${rootArtifactId}.core</artifactId>
-            <version>${version}</version>
+            <groupId>com.org</groupId>
+            <artifactId>example-sdk-app.core</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.kosdev.kos.sdk.api</groupId>
+            <groupId>com.kosdev.kos2.sdk.api</groupId>
             <artifactId>api-dispense</artifactId>
         </dependency>
         <dependency>

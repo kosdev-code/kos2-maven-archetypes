@@ -40,7 +40,7 @@
         <dependencies>
             <!-- BOM for kOS SDK Code (core, dispense, freestyle) -->
             <dependency>
-                <groupId>com.kosdev.kos.sdk.bom</groupId>
+                <groupId>com.kosdev.kos2.sdk.com</groupId>
                 <artifactId>kos-bom</artifactId>
                 <version>${kos-bom.version}</version>
                 <type>pom</type>
@@ -84,12 +84,10 @@
                 <plugin>
                     <groupId>com.kosdev.kos.maven</groupId>
                     <artifactId>kos-kab-maven-plugin</artifactId>
-                    <version>${kos-kab-maven-plugin.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>com.kosdev.kos.maven</groupId>
                     <artifactId>kos-sdk-maven-plugin</artifactId>
-                    <version>${kos-sdk-maven-plugin.version}</version>
                 </plugin>
 
             </plugins>
