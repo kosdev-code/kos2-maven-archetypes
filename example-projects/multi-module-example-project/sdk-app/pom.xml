@@ -26,16 +26,12 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!-- kOS Maven Plugins -->
-                <plugin>
-                    <groupId>com.kosdev.kos.maven</groupId>
-                    <artifactId>kos-kab-maven-plugin</artifactId>
-                </plugin>
+                <!-- kOS Maven Plugin -->
                 <plugin>
                     <groupId>com.kosdev.kos.maven</groupId>
                     <artifactId>kos-sdk-maven-plugin</artifactId>
+                    <version>${kos-sdk-maven-plugin.version}</version>
                 </plugin>
-
             </plugins>
         </pluginManagement>
     </build>

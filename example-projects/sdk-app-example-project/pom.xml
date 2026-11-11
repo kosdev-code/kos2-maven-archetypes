@@ -4,6 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>com.kosdev.kos2.sdk.bom</groupId>
+        <artifactId>kos-bom</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+
     <!-- ====== Basics =============================================================== -->
 
     <groupId>com.org.example</groupId>
@@ -16,7 +23,6 @@
 
     <properties>
         <!-- kOS libraries (last updated 2024-05-16 by RS) -->
-        <kos-bom.version>0.0.0-SNAPSHOT</kos-bom.version>
         <lombok.version>1.18.38</lombok.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <maven-assembly-plugin.version>3.6.0</maven-assembly-plugin.version>
@@ -42,15 +48,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- BOM for kOS SDK Code (core, dispense, freestyle) -->
-            <dependency>
-                <groupId>com.kosdev.kos2.sdk.bom</groupId>
-                <artifactId>kos-bom</artifactId>
-                <version>${kos-bom.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <!-- Lombok annotations -->
             <!-- https://www.projectlombok.org/ -->
             <dependency>
@@ -68,16 +65,11 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!-- kOS Maven Plugins -->
-                <plugin>
-                    <groupId>com.kosdev.kos.maven</groupId>
-                    <artifactId>kos-kab-maven-plugin</artifactId>
-                </plugin>
                 <plugin>
                     <groupId>com.kosdev.kos.maven</groupId>
                     <artifactId>kos-sdk-maven-plugin</artifactId>
+                    <version>${kos-sdk-maven-plugin.version}</version>
                 </plugin>
-
             </plugins>
         </pluginManagement>
     </build>

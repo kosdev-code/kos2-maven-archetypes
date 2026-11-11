@@ -69,7 +69,7 @@
             </plugin>
             <!-- Convert to a KAB file -->
             <plugin>
-                <groupId>com.kosdev.kos.maven</groupId>
+                <groupId>com.kosdev.kos2.maven</groupId>
                 <artifactId>kos-kab-maven-plugin</artifactId>
                 <executions>
                     <execution>
@@ -78,6 +78,7 @@
                             <goal>kabtool</goal>
                         </goals>
                         <configuration>
+                           <name>${project.artifactId}</name>
                            <type>kos.app</type>
                            <content>
                               <copy>

@@ -16,3 +16,7 @@ so that it matches the kab type you want to use.
 
 Update the artifactId in the pom.xml in the app and data directory to what you want to use.
 
+The layer directory builds a kos.layer kab, which is a squashfs image that gets
+overlaid onto the device.
+
+

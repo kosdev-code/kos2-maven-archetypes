@@ -6,7 +6,7 @@
     {
       "id": "multi-module-example-project",
       "filename": "target/multi-module-example-project-${KOS_STD_VERSION_REGEX}.kab",
-      "artifactstore": "default_artifact_store",
+      "artifactstore": "default_artifact_store"
     }
   ]
 }

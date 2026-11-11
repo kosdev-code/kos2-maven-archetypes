@@ -50,6 +50,7 @@
                             <goal>sdk</goal>
                         </goals>
                         <configuration>
+                           <appId>org-${project.artifactId}</appId>
                            <srcDirs>
                               <srcDir>../core</srcDir>
                            </srcDirs>

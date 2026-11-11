@@ -6,7 +6,7 @@
     {
       "id": "${artifactId}",
       "filename": "target/${artifactId}-${KOS_STD_VERSION_REGEX}.kab",
-      "artifactstore": "default_artifact_store",
+      "artifactstore": "default_artifact_store"
     }
   ]
 }

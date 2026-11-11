@@ -2,6 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>com.kosdev.kos2.sdk.bom</groupId>
+        <artifactId>kos-bom</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+
     <!-- ====== Basics =============================================================== -->
 
     <groupId>${groupId}</groupId>
@@ -15,7 +22,6 @@
     <!-- ====== Properties =========================================================== -->
 
     <properties>
-        <kos-bom.version>0.0.0-SNAPSHOT</kos-bom.version>
         <lombok.version>1.18.38</lombok.version>
 
         <java.version>17</java.version>
@@ -38,15 +44,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- BOM for kOS SDK Code (core, dispense, freestyle) -->
-            <dependency>
-                <groupId>com.kosdev.kos2.sdk.com</groupId>
-                <artifactId>kos-bom</artifactId>
-                <version>${kos-bom.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <!-- Lombok annotations -->
             <!-- https://www.projectlombok.org/ -->
             <dependency>
@@ -80,16 +77,11 @@
                     </configuration>
                 </plugin>
 
-                <!-- kOS Maven Plugins -->
-                <plugin>
-                    <groupId>com.kosdev.kos.maven</groupId>
-                    <artifactId>kos-kab-maven-plugin</artifactId>
-                </plugin>
                 <plugin>
                     <groupId>com.kosdev.kos.maven</groupId>
                     <artifactId>kos-sdk-maven-plugin</artifactId>
+                    <version>${kos-sdk-maven-plugin.version}</version>
                 </plugin>
-
             </plugins>
         </pluginManagement>
     </build>

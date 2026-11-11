@@ -1,0 +1,8 @@
+[Unit]
+Description=KOS Java Application
+
+[Service]
+ExecStart=/opt/kos/kos-app-start.sh
+
+[Install]
+WantedBy=kos-core.service

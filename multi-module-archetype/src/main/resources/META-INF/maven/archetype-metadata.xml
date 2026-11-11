@@ -40,6 +40,21 @@
         </fileSet>
       </fileSets>
     </module>
+    <module id="${rootArtifactId}-layer" dir="layer" name="${rootArtifactId}-layer">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>assets</directory>
+          <includes>
+            <include>**/*.txt</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <includes>
+            <include>kos-core-java.service</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
     <module id="${rootArtifactId}-system" dir="system" name="${rootArtifactId}-system">
       <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">

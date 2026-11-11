@@ -1,0 +1,1 @@
+Layer asset placeholder. Files in this directory are copied into the layer under usr/lib/assets.

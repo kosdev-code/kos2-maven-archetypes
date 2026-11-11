@@ -2,12 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>com.kosdev.kos2.sdk.bom</groupId>
+        <artifactId>kos-bom</artifactId>
+        <version>0.0.0-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+
     <groupId>${groupId}</groupId>
     <artifactId>${artifactId}</artifactId>
     <version>0.0.0-SNAPSHOT</version>
 
     <properties>
-        <kos.version>0.0.0-SNAPSHOT</kos.version>
+        <lombok.version>1.18.38</lombok.version>
 
         <java.version>17</java.version>
 
@@ -23,15 +30,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- kOS SDK -->
-            <dependency>
-                <groupId>com.kosdev.kos2.sdk.com</groupId>
-                <artifactId>kos-bom</artifactId>
-                <version>${kos.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-
             <!-- Lombok annotations -->
             <!-- https://www.projectlombok.org/ -->
             <dependency>
@@ -93,13 +91,6 @@
                     <artifactId>maven-assembly-plugin</artifactId>
                     <version>${maven-assembly-plugin.version}</version>
                 </plugin>
-
-                <!-- kOS Maven Plugin -->
-                <plugin>
-                    <groupId>com.kosdev.kos.maven</groupId>
-                    <artifactId>kos-kab-maven-plugin</artifactId>
-                </plugin>
-
             </plugins>
         </pluginManagement>
 
@@ -126,7 +117,7 @@
             </plugin>
 
             <plugin>
-                <groupId>com.kosdev.kos.maven</groupId>
+                <groupId>com.kosdev.kos2.maven</groupId>
                 <artifactId>kos-kab-maven-plugin</artifactId>
                 <executions>
                     <execution>
@@ -135,6 +126,7 @@
                             <goal>kabtool</goal>
                         </goals>
                         <configuration>
+                            <name>${project.artifactId}</name>
                             <type>kos.app</type>
                             <content>
                                 <copy>

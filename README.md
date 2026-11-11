@@ -41,7 +41,8 @@ mvn archetype:generate \
  -DarchetypeArtifactId=sdk-app
 ```
 
-multi-module-archetype: is a multi module system application archetype.
+multi-module-archetype: is a multi module system application archetype. It also includes a
+`layer` module that builds a `kos.layer` kab with a systemd service.
 
 ```
 mvn archetype:generate \
